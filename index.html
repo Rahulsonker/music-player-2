@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <p id="logo"><i class="ri-music-2-line"></i>Music</p>
+
+        <!-- left part -->
+        <div class="left">
+            <!-- Song image -->
+            <img src="" alt="song img" id="track_image">
+            <div class="volume">
+                <p id="volume_show">90</p>
+
+                <i class="ri-volume-up-fill" id="volume_icon" onclick="mute_sound()"></i>
+                <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+            
+            </div>
+        </div>
+    
+
+    <!-- right part --> 
+    <div class="right">
+        <div class="show_song_no">
+            <p id="present">1</p>
+            <p>/</p>
+            <p id="total">5</p>
+        </div>
+
+        <!-- song title -->
+        <p id="title">title.mp3</p>
+        <p id="artist">Artists name</p>
+
+        <!-- middle part -->
+        <div class="middle">
+            <button onclick="previous_song()" id="pre"><i class="ri-skip-left-fill"></i></button>
+            <button onclick="justplay()" id="play"><i class="ri-play-fill"></i></button>
+            <button onclick="next_song()" id="next"><i class="ri-skip-right-fill"></i></button>
+        </div>
+
+        <!-- song duration part -->
+        <div class="duration">
+            <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+        <button id="auto" onclick="autoplay_switch()">Auto Play <i class="ri-donut-chart-line"></i></button>
+    </div>
+    </div>
+   
+    <!-- Add javascript file-->
+    <script src="script.js"></script>
+
+</body>
+</html>
