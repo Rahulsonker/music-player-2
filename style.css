@@ -20,7 +20,7 @@ html,body{
     align-items: center;
     justify-content: center;
     background-image:linear-gradient(to right, #5d6d7e, #566573);
-    box-shadow: 4px 40px 50px #383838;
+    box-shadow: 4px 40px 50px #d10303;
 }
 .main button{
     padding: 10px 12px;
